@@ -1,0 +1,38 @@
+{
+  "name": "sistema-rijo-backend",
+  "version": "1.0.0",
+  "description": "API Backend do Sistema Rijo - Gestão de Tarefas e Projetos",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node scripts/migrate.js",
+    "test-db": "node scripts/test-db.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "sistema-rijo",
+    "gestao-tarefas",
+    "api",
+    "express",
+    "postgresql"
+  ],
+  "author": "Rijo Engenharia",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.1.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
